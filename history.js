@@ -4,7 +4,7 @@
  * https://mrcoles.com/bookmarklet/
  */
 
-const LOCAL_STORAGE_KEY = 'hipchat_' + $('.hc-page-header-topic span').html();
+const LOCAL_STORAGE_KEY = 'hipchat_' + $('.hc-groupchat-header *').html();
 
 const removeDataAttributes = target => {
     let $target = $(target);
